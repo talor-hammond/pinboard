@@ -1,8 +1,57 @@
+/* 
+MARK: REFERENCES
+
+GREEN COLOR SCHEME -
+#BAC7BE
+#C2E1C2
+#7DCD85
+#80AB82
+#778472 
+
+*/
+
+
+
+body {
+    margin: 0;
+    font-family: Garamond, Helvetica, Arial
+}
+
+/* NAVBAR STYLING */
 header {
-    background-color: #f3f3f3;
-    color: black;
+    background-color: #778472;
+    color: white;
+    text-transform: lowercase;
+    font-style: italic;
     height: 80px;
     width: 100%;
     position: fixed;
     top: 0;
+    margin-left: 0;
+}
+
+ul.navBar {
+    text-align: center;
+    list-style-type: none;
+    font-size: 20px;
+    padding: 25px 50px;
+}
+
+ul.navBar li {
+    display: inline;
+    padding: 0 10px;
+}
+
+ul.navBar li a { /* NAVBAR LINKS */
+    text-decoration: none;
+    color: white;
+}
+
+/* FUNCTIONAL / 'FIXING' CLASSES */
+.floatLeft {
+    float: left;
+}
+
+.floatRight {
+    float: right;
 }
