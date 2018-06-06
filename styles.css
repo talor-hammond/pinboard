@@ -14,23 +14,24 @@ GREEN COLOR SCHEME -
 
 body {
     margin: 0;
-    font-family: Garamond, Helvetica, Arial
+    font-family: Garamond, Helvetica, Arial;
+    height: 1000px;
 }
 
 /* NAVBAR STYLING */
-header {
-    background-color: #778472;
-    color: white;
-    text-transform: lowercase;
-    font-style: italic;
+/* header {
+    background-color: rgba(255, 255, 255, 0.5); 
+    border-bottom: 1px solid rgba(0, 0, 0, .3);
+    color: black;
     height: 80px;
     width: 100%;
     position: fixed;
+    z-index: 1;
     top: 0;
     margin-left: 0;
-}
+} */
 
-ul.navBar {
+/* ul.navBar {
     text-align: center;
     list-style-type: none;
     font-size: 20px;
@@ -42,16 +43,21 @@ ul.navBar li {
     padding: 0 10px;
 }
 
-ul.navBar li a { /* NAVBAR LINKS */
+ul.navBar li a {
     text-decoration: none;
-    color: white;
+    color: black;
+    transition: ease-in-out 165ms all;
 }
 
+ul.navBar li a:hover {
+    color: black;
+} */
+
 /* FUNCTIONAL / 'FIXING' CLASSES */
-.floatLeft {
+/* .floatLeft {
     float: left;
 }
 
 .floatRight {
     float: right;
-}
+} */
