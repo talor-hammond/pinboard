@@ -10,8 +10,6 @@ GREEN COLOR SCHEME -
 
 */
 
-
-
 html, body {
     margin: 0;
     padding: 0;
@@ -22,15 +20,17 @@ body {
     font-family: Garamond, Helvetica, Arial;
 }
 
+/* HEADER STYLES */
 header {
     width: 100%;
     height: 80vh;
     background: #778472;
-    border-bottom: 1px solid black;
 }
 
-.content {
+.headerContent {
+    margin-top: 125px;
     text-align: center;
+    color: white;
 }
 
 .logo { 
@@ -54,6 +54,20 @@ header {
     margin-top: 20px;
 }
 
+.login {
+    position: static;
+    float: right;
+    margin: 12px 20px;
+    color: white;
+    font-size: 16px;
+}
+
+.login a {
+    text-decoration: none;
+    color: white;
+}
+
+/* NAVBAR */
 nav {
     position: fixed;
     width: 100%;
@@ -94,6 +108,32 @@ a.black { /* add this class to scroll */
     background-color: white;
     height: 65px;
     border-bottom: 1px solid rgba(0, 0, 0, .3);
+    z-index: 1;
+}
+
+/* BUTTONS */
+.buttons {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.leftButton {
+    width: 165px;
+    color: white;
+}
+
+.rightButton {
+    width: 165px;
+}
+
+/* BODY */
+.bodyContent {
+    padding-top: 50px;
+}
+
+/* FOOTER */
+footer {
+
 }
 
 /* MEDIA-QUERIES */
