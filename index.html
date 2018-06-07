@@ -61,7 +61,7 @@
                             <a href="#">browse pins</a>
                         </li>
                         <li>
-                            <a href="#">pin a job</a>
+                            <a href="#">create a pin</a>
                         </li>
                         <li>
                             <a href="#">profile</a>
@@ -79,8 +79,9 @@
         <div class="content">
             <div class="row">
                 <div class="twelve columns">
-                    <h1>Need something done? Want to put your skills out there?</h1>
-                    <h4>Pinboard lets you reach out to your community for the blah blah blah, blah blah.</h2>
+                    <!-- <h1>Need something done? Want to put your skills out there?</h1> -->
+                    <!-- <h4>Pinboard lets you reach out to your community for the blah blah blah, blah blah.</h2> -->
+                        <br><br><br><br><br><br><br><br><br><br>
                 </div>
             </div>
         </div>
@@ -97,11 +98,15 @@
 
 
         // DYNAMIC HEADER ON SCROLL
-        $(window).on("scroll", function() {
-            if($(window).scrollTop()) {
-                $('nav').addClass('white');
+        $(window).on("scroll", function () {
+            if ($(window).scrollTop()) {
+                $('nav').addClass('scrollBackground');
+                $('nav').removeClass('fixHeight');
+                $('a').addClass('black');
             } else {
-                $('nav').removeClass('white');
+                $('nav').removeClass('scrollBackground')
+                $('nav').addClass('fixHeight')
+                $('a').removeClass('black')
             }
         })
 
