@@ -24,13 +24,21 @@ body {
 header {
     width: 100%;
     height: 80vh;
-    background: #778472;
+    background: #80AB82;
 }
 
 .headerContent {
     margin-top: 125px;
     text-align: center;
     color: white;
+}
+
+.headerContent h1 {
+    font-size: 50px;
+}
+
+.headerContent h4 {
+    font-size: 28px;
 }
 
 .logo { 
@@ -99,7 +107,7 @@ nav ul li a, .logo a { /* without scroll */
     color: white;
 }
 
-a.black { /* add this class to scroll */
+nav ul li a.black, .logo a.black { /* add this class to scroll */
     text-decoration: none;
     color: black;
 }
@@ -124,6 +132,7 @@ a.black { /* add this class to scroll */
 
 .rightButton {
     width: 165px;
+    color: white;
 }
 
 /* BODY */
@@ -133,7 +142,12 @@ a.black { /* add this class to scroll */
 
 /* FOOTER */
 footer {
-
+    position: static;
+    bottom: 0;
+    border-top: 1px solid rgba(0, 0, 0, .3);
+    width: 100%;
+    height: 200px;
+    background-color: white; 
 }
 
 /* MEDIA-QUERIES */
