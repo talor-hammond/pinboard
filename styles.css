@@ -10,48 +10,150 @@ GREEN COLOR SCHEME -
 
 */
 
-
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
 
 body {
-    margin: 0;
-    font-family: Garamond, Helvetica, Arial
+    font-family: Garamond, Helvetica, Arial;
 }
 
-/* NAVBAR STYLING */
+/* HEADER STYLES */
 header {
-    background-color: #778472;
-    color: white;
-    text-transform: lowercase;
-    font-style: italic;
-    height: 80px;
     width: 100%;
-    position: fixed;
-    top: 0;
-    margin-left: 0;
+    height: 80vh;
+    background: #80AB82;
 }
 
-ul.navBar {
+.headerContent {
+    margin-top: 125px;
     text-align: center;
-    list-style-type: none;
-    font-size: 20px;
-    padding: 25px 50px;
+    color: white;
 }
 
-ul.navBar li {
-    display: inline;
-    padding: 0 10px;
+.headerContent h1 {
+    font-size: 50px;
 }
 
-ul.navBar li a { /* NAVBAR LINKS */
+.headerContent h4 {
+    font-size: 28px;
+}
+
+.logo { 
+    position: fixed;
+    float: left;
+    margin: 12px 20px;
+    color: white;
+    font-size: 24px;
+}
+
+.logo a {
     text-decoration: none;
     color: white;
 }
 
-/* FUNCTIONAL / 'FIXING' CLASSES */
-.floatLeft {
-    float: left;
+.menu {
+    text-transform: uppercase;
+    font-weight: 100;
+    letter-spacing: .1rem;
+    font-size: 12px;
+    margin-top: 20px;
 }
 
-.floatRight {
+.login {
+    position: static;
     float: right;
+    margin: 12px 20px;
+    color: white;
+    font-size: 16px;
 }
+
+.login a {
+    text-decoration: none;
+    color: white;
+}
+
+/* NAVBAR */
+nav {
+    position: fixed;
+    width: 100%;
+    /* background-color: white; */
+    color: black;
+    transition: 220ms;
+}
+
+nav.fixHeight {
+    height: 0px;
+}
+
+nav ul {
+    list-style: none;
+    background: rgba(0, 0, 0, 0);
+    overflow: hidden;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    padding: 25px 10px;
+}
+
+nav ul li a, .logo a { /* without scroll */
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a.black, .logo a.black { /* add this class to scroll */
+    text-decoration: none;
+    color: black;
+}
+
+.scrollBackground { /* add this class to nav when scroll */
+    background-color: white;
+    height: 65px;
+    border-bottom: 1px solid rgba(0, 0, 0, .3);
+    z-index: 1;
+}
+
+/* BUTTONS */
+.buttons {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.leftButton {
+    width: 165px;
+    color: white;
+}
+
+.rightButton {
+    width: 165px;
+    color: white;
+}
+
+/* BODY */
+.bodyContent {
+    padding-top: 50px;
+}
+
+/* FOOTER */
+footer {
+    position: static;
+    bottom: 0;
+    border-top: 1px solid rgba(0, 0, 0, .3);
+    width: 100%;
+    height: 200px;
+    background-color: white; 
+}
+
+/* MEDIA-QUERIES */
+
+/* @media(max-width: 580px) { -- TODO: push pinboard on to the top, make the menu items smaller and spread them out underneath
+    
+
+
+} */
