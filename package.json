@@ -1,0 +1,20 @@
+{
+  "name": "pinboard",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/talor-hammond/pinboard",
+  "author": "talor-hammond <talorjhammond@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "express": "^4.16.3",
+    "fs": "^0.0.1-security",
+    "jest": "^23.1.0",
+    "knex": "^0.14.6",
+    "nodemon": "^1.17.5",
+    "sqlite3": "^4.0.0"
+  }
+}
