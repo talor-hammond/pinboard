@@ -81,27 +81,35 @@
             </div>
         </div>
 
-        <div class="createTaskForm">
-
-            <form action="/urlHere" method="post"> <!-- call .post method when submit button clicked -->
+            <form action="/urlHere" method="post" class="createTaskForm"> <!-- call .post method when submit button clicked -->
 
                 <!-- CATEGORY -->
                 <label for="category">Select a category</label>
-                <input type="text" placeholder=""> <!-- let this input be a scrollView / pickerView-style thing -->
+                <select name="category" id="category"> <!-- TODO: #EACH HANDLEBARS / DATABASE OBJECT TO PRODUCE LIST -->
+                    <option value="mechanics">Mechanics</option>
+                    <option value="homeRepair">Home Repair</option>
+                    <option value="technology">Technology</option>
+                    <option value="labour">Labour</option>
+                    <option value="moving">Help with moving</option>   
+                </select>
+
+                <!-- OTHER CATEGORY -->
+                <!-- IF a category doesn't apply, please specify -->
 
                 <!-- TITLE -->
                 <label for="title">What's the task?</label>
-                <input type="text" placeholder="Fix a broken window, edit my essay, etc." name="title">
+                <input class="title" type="text" placeholder="Fix a broken window, edit my essay, etc." name="title">
 
                 <!-- DESCRIPTION -->
                 <label for="taskDescription">Describe it in detail</label>
-                <input type="text" class="description">
+                <input class="description" type="text">
 
                 <!-- COST -->
                 <label for="cost">What price?</label>
                 <input type="text" placeholder="" name="cost">
 
-                <label for="address">Address</label>
+                <!-- ADDRESS -->
+                <label for="address">Address (<em>start typing your address...</em>)</label>
                 <input type="text" placeholder"Start typing your address here...">
 
                 <!-- IMAGES -->
@@ -110,10 +118,9 @@
 
                 <br><br>
                 <input type="submit" value="Post Task">
+                <!-- NOTE: KNEX.INSERT .POST RES.BODY.PROPERTIES -->
 
             </form>
-
-        </div>
 
     </div>
 
