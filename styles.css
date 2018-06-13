@@ -1,0 +1,20 @@
+/* NAVBAR */
+.middle ul {
+    text-align: center;
+    list-style-type: none;
+}
+
+.middle ul li {
+    display: inline-block;
+}
+
+.middle ul li a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+.right {
+    text-align: right;
+}
