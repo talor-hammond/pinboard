@@ -49,39 +49,17 @@
 /* FOOTER */
 .footer {
     background-color: rgba(139, 139, 139, 0.05);
-    border-top: 1px solid rgba(0, 0, 0, .22)
+    border-top: 1px solid rgba(0, 0, 0, .22);
 }
 
 /* BROWSE */
-.miniItems {
-    height: 73vh;
-    overflow: auto; /* ADDS SCROLL TO MINIITEMS COLUMNS, i.e. anything past 73vh */
-}
-
-.miniBox {
-    margin-bottom: 8px;
-    transition: .15s ease-in-out all;
-}
-
-.miniBox:hover {
-    background-color: rgba(0, 0, 0, 0.07);
-
-}
-
-.listing {
-    height: 100%;
-    position: relative;
-}
-
-.profileOnListing {
-    position: absolute;
-    bottom: 10px;
-    width: 95%;
+section.content {
+    margin-top: 75px;
 }
 
 /* PROFILE */
 .profile {
-    margin-top: 80px;
+    margin-top: 75px;
 }
 
 figure.image img {
