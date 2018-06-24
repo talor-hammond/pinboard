@@ -57,15 +57,28 @@ section.content {
     margin-top: 75px;
 }
 
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.wrapper .card {
+    margin: 0 auto;
+    /* text-align: center; */
+    width: 325px;
+    height: 400px;
+    margin-bottom: 25px;
+    transition: .2s ease-in-out all;
+}
+
+.wrapper .card:hover {
+    background-color: rgba(99, 99, 99, .15);
+    /* TODO: BOX-SHADOW */
+}
+
 /* PROFILE */
 .profile {
     margin-top: 75px;
-}
-
-figure.image img {
-    border: 1px solid black;
-    border-radius: 50%;
-    box-shadow: 0 0 18px black;
 }
 
 /* FIX CLASSES */
