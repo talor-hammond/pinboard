@@ -17,8 +17,9 @@
 
 <body>
 
-    <!-- HEADER -->
-    <nav class="navbar is-dark is-fixed-top">
+    <!-- NAVBAR -->
+    <header class="notHome">
+        <nav class="navbar is-dark is-fixed-top">
             <div class="container">
                 <!-- LEFT NAVBAR -->
                 <div class="navbar-brand">
@@ -29,20 +30,18 @@
                 <!-- RIGHT NAVBAR -->
                 <div class="navbar-end">
                     <div class="navbar-item">
-                        <a href="#" class="has-text-white">browse</a>
+                        <a href="./browse.html" class="has-text-white">browse</a>
                     </div>
                     <div class="navbar-item">
-                        <a href="#" class="has-text-white">pin something</a>
+                        <a href="#" class="has-text-white">make a pin</a>
                     </div>
                     <div class="navbar-item">
-                        <a href="#" class="has-text-white">profile</a>
-                    </div>
-                    <div class="navbar-item">
-                        <a href="./signup.html" class="button">sign-up | log-in</a>
+                        <a href="./signup.html" class="has-text-white">sign-in</a>
                     </div>
                 </div>
             </div>
         </nav>
+    </header>
 
     <!-- PROFILE CONTENT -->
     <div class="container profile">
@@ -68,9 +67,42 @@
             </div>
 
             <!-- RIGHT COLUMN -->
-            <div class="column is-8 is-centered">
+            <div class="column is-8">
 
+                <!-- TAB BAR -->
+                <div class="tabs is-boxed" id="nav">
+                    <ul>
+                        <!-- PINS -->
+                        <li data-target="pane-1" id="1" class="is-active">
+                            <a>
+                                <span class="icon is-small">
+                                    <i class="fa fa-thumb-tack"></i>
+                                </span>
+                                <span>Pins</span>
+                            </a>
+                        </li>
+                        <!-- TODO: JOB PROFILE -->
+                        <li data-target="pane-2" id="2">
+                            <a>
+                                <span class="icon is-small">
+                                    <i class="fa fa-user"></i>
+                                </span>
+                                <span>Job Profile</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
 
+                <div class="tab-content">
+                    <!-- PINS -->
+                    <div class="tab-pane is-active" id="pane-1">
+
+                    </div>
+                    <!-- JOB PROFILE -->
+                    <div class="tab-pane" id="pane-2">
+
+                    </div>
+                </div>
 
             </div>
 
@@ -78,6 +110,9 @@
 
 
     </div>
+
+    <!-- SCRIPT -->
+    <script src="./js/tabs.js"></script>
 
 </body>
 

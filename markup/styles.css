@@ -62,18 +62,34 @@ section.content {
     flex-wrap: wrap;
 }
 
-.wrapper .card {
+
+.wrapper .miniListing {
     margin: 0 auto;
-    /* text-align: center; */
-    width: 325px;
-    height: 400px;
+    text-align: center;
+    width: 23.5%;
+    height: 275px;
     margin-bottom: 25px;
-    transition: .2s ease-in-out all;
+    text-align: left;
 }
 
-.wrapper .card:hover {
-    background-color: rgba(99, 99, 99, .15);
-    /* TODO: BOX-SHADOW */
+.wrapper .miniListing figure {
+    width: 100%;
+    margin: 0;
+}
+
+.address, .price {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+p.listingTitle {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.username {
+    font-style: italic;
 }
 
 /* PROFILE */
@@ -108,26 +124,6 @@ border-right: 1px solid rgba(0, 0, 0, .2);
     font-weight: 100;
 }
 
-/* SCROLLBAR */
-/* width */
-div.miniItems::-webkit-scrollbar {
-    width: 7px;
-}
-
-/* Track */
-div.miniItems::-webkit-scrollbar-track {
-    background: #f1f1f1;
-    border-radius: 10px;
-}
- 
-/* Handle */
-div.miniItems::-webkit-scrollbar-thumb {
-    background: #999;
-    border-radius: 10px;
-    box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
-    transition: all .5s; 
-}
-
-div.miniItems::-webkit-scrollbar-thumb:hover {
-    background: #777; 
+.border {
+    border: 1px solid black;
 }
