@@ -64,8 +64,8 @@ section.content {
 
 
 .wrapper .miniListing {
-    margin: 0 auto;
-    text-align: center;
+    /* margin: 0 auto; */
+    margin-right: 1%;
     width: 23.5%;
     height: 275px;
     margin-bottom: 25px;
