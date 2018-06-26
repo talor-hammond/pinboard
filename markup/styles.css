@@ -92,6 +92,11 @@ p.listingTitle {
     font-style: italic;
 }
 
+/* CREATE */
+input.cost {
+    width: 90px;
+}
+
 /* PROFILE */
 .profile {
     margin-top: 75px;
