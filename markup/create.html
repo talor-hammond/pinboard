@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.css">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+
+    <!-- TITLE AND FAVICON -->
+    <title>Browse</title>
+</head>
+
+<!-- BODY -->
+
+<body>
+    <!-- NAVBAR -->
+    <header class="notHome">
+        <nav class="navbar is-dark is-fixed-top">
+            <div class="container">
+                <!-- LEFT NAVBAR -->
+                <div class="navbar-brand">
+                    <a href="./index.html" class="navbar-item logo">
+                        <strong>pin</strong>board</a>
+                </div>
+
+                <!-- RIGHT NAVBAR -->
+                <div class="navbar-end">
+                    <div class="navbar-item">
+                        <a href="./browse.html" class="has-text-white">browse</a>
+                    </div>
+                    <div class="navbar-item">
+                        <a href="#" class="has-text-white">make a pin</a>
+                    </div>
+                    <div class="navbar-item">
+                        <a href="./signup.html" class="has-text-white">sign-in</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- FORM -->
+
+    <!-- CATEGORY -->
+    <!-- <div class="field">
+        <label class="label">Category</label>
+        <div class="control">
+            <div class="select">
+                <select>
+                    <option>Select dropdown</option>
+                    <option>With options</option>
+                </select>
+            </div>
+        </div>
+    </div> -->
+
+    <section class="content">
+        <div class="container">
+
+            <!-- TITLE -->
+            <div class="field">
+                <label class="label">Title</label>
+                <div class="control has-icons-left">
+                    <input class="input" type="text" placeholder="e.g. 'Broke my window smh, help plz'">
+                    <div class="icon is-small is-left">
+                        <i class="fa fa-map-pin"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- IMAGES -->
+            <div class="field">
+                <label class="label">Add some descriptive images</label>
+                <div class="control">
+                    <input type="input" class="input">
+                </div>
+            </div>
+
+            <!-- DESCRIPTION -->
+            <div class="field">
+                <label class="label">Add a description</label>
+                <div class="control">
+                    <textarea class="textarea" placeholder="Describe it?????"></textarea>
+                </div>
+            </div>
+
+            <!-- REGION -->
+            <div class="field">
+                <label for="region" class="label">Select region:</label>
+                <div class="control has-icons-left">
+                    <div class="select">
+                        <select>
+                            <option>Wellington</option>
+                            <option>Auckland</option>
+                        </select>
+                    </div>
+                    <div class="icon is-small is-left">
+                        <i class="fa fa-location-arrow"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ADDRESS -->
+            <div class="field">
+                <label class="label">Address</label>
+                <div class="control has-icons-left">
+                    <input class="input" type="text" placeholder="Start typing an address...">
+                    <div class="icon is-small is-left">
+                        <i class="fa fa-map-marker"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- COST -->
+            <div class="field">
+                <label class="label">Price</label>
+                <div class="control has-icons-left">
+                    <input class="input cost" type="text">
+                    <span class="icon is-small is-left">
+                        <i class="fa fa-usd"></i>
+                    </span>
+                </div>
+            </div>
+
+
+            <!-- Terms and Conditions check -->
+            <!-- <div class="field">
+                <div class="control">
+                    <label class="checkbox">
+                        <input type="checkbox"> I agree to the
+                        <a href="#">terms and conditions</a>
+                    </label>
+                </div>
+            </div> -->
+
+            <div class="field is-grouped">
+                <div class="control">
+                    <button class="button is-link">Submit</button>
+                </div>
+                <div class="control">
+                    <button class="button is-text">Cancel</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>
+                <strong>pinboard</strong> © 2018
+            </p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Username</title>
+    <!-- USERNAME -->
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.css">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="notHome">
+        <nav class="navbar is-dark is-fixed-top">
+            <div class="container">
+                <!-- LEFT NAVBAR -->
+                <div class="navbar-brand">
+                    <a href="./index.html" class="navbar-item logo">
+                        <strong>pin</strong>board</a>
+                </div>
+
+                <!-- RIGHT NAVBAR -->
+                <div class="navbar-end">
+                    <div class="navbar-item">
+                        <a href="./browse.html" class="has-text-white">browse</a>
+                    </div>
+                    <div class="navbar-item">
+                        <a href="#" class="has-text-white">make a pin</a>
+                    </div>
+                    <div class="navbar-item">
+                        <a href="./signup.html" class="has-text-white">sign-in</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- PROFILE CONTENT -->
+    <div class="container profile">
+        <div class="columns">
+
+            <!-- LEFT COLUMN -->
+            <div class="column is-4">
+                <!-- AVATAR -->
+                <figure class="image is-1by1">
+                    <img src="https://bulma.io/images/placeholders/480x480.png">
+                </figure>
+                <br>
+                <!-- USERNAME -->
+                <h1 class="title">Name</h1>
+                <!-- NAME -->
+                <h2 class="subtitle">Username</h2>
+                <hr>
+                <!-- BIO -->
+                <p class="subtitle">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam ea sequi perferendis dignissimos natus. Dignissimos deleniti
+                    sequi ea numquam, cupiditate quia nulla voluptas nobis aut iste nesciunt in, sunt labore.
+                </p>
+            </div>
+
+            <!-- RIGHT COLUMN -->
+            <div class="column is-8">
+
+                <!-- TAB BAR -->
+                <div class="tabs is-boxed" id="nav">
+                    <ul>
+                        <!-- PINS -->
+                        <li data-target="pane-1" id="1" class="is-active">
+                            <a>
+                                <span class="icon is-small">
+                                    <i class="fa fa-thumb-tack"></i>
+                                </span>
+                                <span>Pins</span>
+                            </a>
+                        </li>
+                        <!-- TODO: JOB PROFILE -->
+                        <li data-target="pane-2" id="2">
+                            <a>
+                                <span class="icon is-small">
+                                    <i class="fa fa-user"></i>
+                                </span>
+                                <span>Profile</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="tab-content">
+                    <!-- PINS -->
+                    <div class="tab-pane is-active" id="pane-1">
+                        <div class="wrapper">
+                            <!-- LISTING -->
+                            <div class="miniListing">
+                                <!-- FEATURED IMAGE -->
+                                <figure class="image is-5by3">
+                                    <img src="http://via.placeholder.com/640x360">
+                                </figure>
+                                <!-- ADDRESS (& region / minutes away) -->
+                                <p>
+                                    <span class="address">123 Fake Street</span> |
+                                    <span class="price">$99</span>
+                                </p>
+                                <!-- TITLE -->
+                                <p class="listingTitle">Here's a fake title</p>
+                                <!-- USERNAME -->
+                                <p class="isActive">Active</p>
+
+                            </div>
+
+                            <div class="miniListing">
+                                <!-- FEATURED IMAGE -->
+                                <figure class="image is-5by3">
+                                    <img src="http://via.placeholder.com/640x360">
+                                </figure>
+                                <!-- ADDRESS (& region / minutes away) -->
+                                <p>
+                                    <span class="address">123 Fake Street</span> |
+                                    <span class="price">$99</span>
+                                </p>
+                                <!-- TITLE -->
+                                <p class="listingTitle">Here's a fake title</p>
+                                <!-- USERNAME -->
+                                <p class="isActive">Active</p>
+
+                            </div>
+
+                            <div class="miniListing">
+                                <!-- FEATURED IMAGE -->
+                                <figure class="image is-5by3">
+                                    <img src="http://via.placeholder.com/640x360">
+                                </figure>
+                                <!-- ADDRESS (& region / minutes away) -->
+                                <p>
+                                    <span class="address">123 Fake Street</span> |
+                                    <span class="price">$99</span>
+                                </p>
+                                <!-- TITLE -->
+                                <p class="listingTitle">Here's a fake title</p>
+                                <!-- USERNAME -->
+                                <p class="isActive">Ended</p>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- JOB PROFILE, inline display:none; to stop it from showing initally -->
+                    <div class="tab-pane" id="pane-2" style="display: none;">
+                        <h1 class="title">Testing</h1>
+                        <h2 class="subtitle">Lol</h2>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <!-- SCRIPT -->
+    <script src="./tabs.js"></script>
+
+</body>
+
+</html>

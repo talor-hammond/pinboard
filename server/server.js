@@ -1,12 +1,15 @@
+const path = require('path')
 const express = require('express')
+const bodyParser = require('body-parser')
+const cors = require('cors')
+
 const server = express()
 
-// MIDDLEWARE
-server.use(express.static('public'))
+server.use(cors('*'))
 
-// ROUTES
-server.get('/', function(req, res) {
+server.use(bodyParser.json())
+server.use(express.static(path.join(__dirname, '../public')))
 
-    res.send('Hello');
+//server.use('/api/path', require('./path/to/router'))
 
-})
+module.exports = server
