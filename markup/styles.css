@@ -103,9 +103,13 @@ input.cost {
     font-size: 17px;
 }
 
-.pinrule {
+.featuredImage {
+    border: 1px solid rgba(0, 0, 0, .4)
+}
+
+.description-etc h1.title {
     margin: 0;
-    border: 1px solid black;
+    padding-bottom: 5px;
 }
 
 /* PROFILE */
